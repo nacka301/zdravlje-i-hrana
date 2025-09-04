@@ -1,32 +1,232 @@
 {
   "sections": {
-    "main": {
+    "announcement": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "🔥 OSOBNI TRENING + DIGITALNI PROGRAM - 50% POPUST - Samo danas!",
+            "link": "",
+            "color_scheme": "accent-1"
+          }
+        }
+      },
+      "block_order": ["announcement-0"],
+      "settings": {
+        "color_scheme": "accent-1",
+        "show_line_separator": true,
+        "show_social": false
+      }
+    },
+    "hero": {
       "type": "rich-text",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "DOBRODOŠLI U ZDRAVLJE I HRANU",
+            "heading": "TRANSFORMIRAJTE SVOJE ZDRAVLJE S PERSONAL TRENEROM",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Ova stranica je test da vidimo radi li osnovni sadržaj.</p>"
+            "text": "<p><strong>Osobni online treninzi + digitalni wellness programi koji će vam vratiti energiju, snagu i vitalnost. Preko 5,000 zadovoljnih klijenata!</strong></p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "REZERVIRAJ BESPLATNU KONSULTACIJU ➤",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
-      "block_order": ["heading", "text"],
+      "block_order": ["heading", "text", "button"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-1",
+        "color_scheme": "accent-2",
         "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "trust": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "✅ 30 DANA GARANCIJE",
+            "text": "<p>Ako niste zadovoljni rezultatima, vratit ćemo vam novac - bez pitanja!</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "title": "🏆 5000+ ZADOVOLJNIH KLIJENATA",
+            "text": "<p>Pridružite se tisućama ljudi koji su već transformirali svoje zdravlje</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "title": "⚡ INSTANT PRISTUP",
+            "text": "<p>Odmah nakon plaćanja dobijate pristup svim programima i materijalima</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["column-1", "column-2", "column-3"],
+      "settings": {
+        "title": "ZAŠTO NAS BIRAJU",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "services": {
+      "type": "multicolumn",
+      "blocks": {
+        "service-1": {
+          "type": "column",
+          "settings": {
+            "title": "💪 PERSONAL TRAINING + PROGRAMI",
+            "text": "<p><strong>Osjećate umor i manjak energije?</strong><br/>Naši certificirani treneri i personalizirani digitalni programi vraćaju vam energiju koju ste imali s 30 godina.</p><p>✅ 1-na-1 online personal training<br/>✅ Personalizirani plan treninga<br/>✅ 24/7 podrška i praćenje<br/>✅ Digitalni wellness programi</p>",
+            "link_label": "ZAPOČNI TRANSFORMACIJU ➤",
+            "link": ""
+          }
+        },
+        "service-2": {
+          "type": "column",
+          "settings": {
+            "title": "📚 KOMPLETNI DIGITALNI PAKET",
+            "text": "<p><strong>Uz svaki program GRATIS dobivate:</strong></p><p>🎁 Personal training sesije (vrijedi 10€)<br/>🎁 eBook 'Energija nakon 40' (vrijedi 5€)<br/>🎁 Plan prehrane za 30 dana<br/>🎁 Video vježbe za pokretljivost<br/>🎁 Mobilna aplikacija za praćenje</p>",
+            "link_label": "PREUZMI PROGRAM ODMAH ➤",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["service-1", "service-2"],
+      "settings": {
+        "title": "KAKO FUNKCIONIRA NAŠA METODA",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "accent-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "testimonials": {
+      "type": "multicolumn",
+      "blocks": {
+        "review-1": {
+          "type": "column",
+          "settings": {
+            "title": "⭐⭐⭐⭐⭐ Marija, 45 godina",
+            "text": "<p>\"Nakon samo 2 tjedna korištenja programa, osjećam se kao nova osoba! Energija mi se vratila, bolje spavam i konačno imam motivaciju za vježbanje. Hvala vam!\"</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "review-2": {
+          "type": "column",
+          "settings": {
+            "title": "⭐⭐⭐⭐⭐ Petar, 52 godine",
+            "text": "<p>\"Skeptičan sam bio na početku, ali rezultati govore sve. Izgubio sam 8kg, energija mi je porasla za 200% i žena kaže da izgledam 10 godina mlađe!\"</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "review-3": {
+          "type": "column",
+          "settings": {
+            "title": "⭐⭐⭐⭐⭐ Ana, 48 godina",
+            "text": "<p>\"Najbolja investicija u svoje zdravlje! Konačno mogu ići u korak s djecom, spavam kao beba i imam energiju za sve što volim raditi.\"</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["review-1", "review-2", "review-3"],
+      "settings": {
+        "title": "ŠTO KAŽU NAŠI KLIJENTI",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "⚡ OGRANIČENO MJESTA - SAMO 48 SATI!",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>50% POPUST na sve programe + PERSONAL TRAINING SESIJE + GRATIS digitalni sadržaji</strong></p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "REZERVIRAJ SVOJE MJESTO ➤",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
-  "order": ["main"]
+  "order": ["announcement", "hero", "trust", "services", "testimonials", "cta"]
 }
