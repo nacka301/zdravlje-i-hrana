@@ -1,0 +1,319 @@
+---
+layout: theme
+---
+
+<style>
+  .hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .hero-subtitle {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cta-button {
+    background: #ff6b6b;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255,107,107,0.4);
+  }
+  
+  .pricing-section {
+    padding: 60px 20px;
+    background: #f8f9fa;
+  }
+  
+  .pricing-cards {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-card {
+    flex: 1;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    min-width: 300px;
+  }
+  
+  .pricing-card.popular {
+    border: 3px solid #ffc107;
+    transform: scale(1.05);
+  }
+  
+  .popular-badge {
+    background: #ffc107;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .price-currency {
+    font-size: 0.6em;
+    vertical-align: top;
+  }
+  
+  .features {
+    text-align: left;
+    margin: 20px 0;
+  }
+  
+  .features li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .testimonials {
+    padding: 60px 20px;
+    background: white;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .testimonial {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid #28a745;
+  }
+  
+  .stars {
+    color: #ffc107;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .guarantee {
+    background: #28a745;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .special-offer {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-title { font-size: 2em; }
+    .pricing-cards { flex-direction: column; }
+    .pricing-card.popular { transform: none; }
+  }
+</style>
+
+<div class="hero-section">
+  <h1 class="hero-title">🔥 TRANSFORMIRAJTE SVOJE ZDRAVLJE S PERSONAL TRENEROM 🔥</h1>
+  <p class="hero-subtitle">
+    <strong>Osobni online treninzi + digitalni wellness programi koji će vam GARANTOVANO vratiti energiju, snagu i vitalnost u samo 30 dana!</strong>
+  </p>
+  <p style="font-size: 1.1em; margin-bottom: 30px;">
+    Preko 5,000 zadovoljnih klijenata već je transformiralo svoje zdravlje. Pridružite se njima!
+  </p>
+  <a href="#pricing" class="cta-button">🚀 REZERVIRAJ BESPLATNU KONSULTACIJU 🚀</a>
+</div>
+
+<div class="special-offer">
+  <h2 style="font-size: 2.5em; margin-bottom: 20px;">🎉 POSEBNA AKCIJA - SAMO OVAJ TJEDAN! 🎉</h2>
+  <h3 style="font-size: 2em; margin-bottom: 15px;">50% POPUST + GRATIS PERSONAL TRAINING!</h3>
+  <p style="font-size: 1.3em;">Počnite već danas za nevjerovatnih 2.50€!</p>
+</div>
+
+<div class="pricing-section" id="pricing">
+  <h2 class="section-title">💪 ODABERITE PROGRAM KOJI ODGOVARA VAŠIM POTREBAMA</h2>
+  
+  <div class="pricing-cards">
+    <div class="pricing-card">
+      <h3 style="color: #28a745; font-size: 1.8em;">💚 OSNOVNI PROGRAM</h3>
+      <div class="price">5<span class="price-currency">€</span></div>
+      <p style="color: #666; margin-bottom: 20px;">mjesečno</p>
+      
+      <ul class="features">
+        <li>✅ Personalizirani plan vježbanja</li>
+        <li>✅ Osnovni nutritivni savjeti</li>
+        <li>✅ Pristup mobilnoj aplikaciji</li>
+        <li>✅ Email podrška</li>
+      </ul>
+      
+      <p style="font-style: italic; margin-top: 20px; color: #666;">
+        Idealno za početnike - najjeftiniji start!
+      </p>
+      
+      <button class="cta-button" style="width: 100%; margin-top: 20px;">POČNI ODMAH</button>
+    </div>
+
+    <div class="pricing-card popular">
+      <div class="popular-badge">NAJPOPULARNIJI!</div>
+      <h3 style="color: #ffc107; font-size: 1.8em;">🌟 PREMIUM PROGRAM</h3>
+      <div class="price">15<span class="price-currency">€</span></div>
+      <p style="color: #666; margin-bottom: 20px;">mjesečno</p>
+      
+      <ul class="features">
+        <li>✅ 1-na-1 online personal training</li>
+        <li>✅ Detaljni plan prehrane</li>
+        <li>✅ Tjedni video pozivi s trenerom</li>
+        <li>✅ 24/7 chat podrška</li>
+        <li>✅ Pristup ekskluzivnim video treninzima</li>
+      </ul>
+      
+      <p style="font-style: italic; margin-top: 20px; color: #666;">
+        Najbolji omjer cijene i kvalitete - samo 50 centi dnevno!
+      </p>
+      
+      <button class="cta-button" style="width: 100%; margin-top: 20px;">POČNI ODMAH</button>
+    </div>
+
+    <div class="pricing-card">
+      <h3 style="color: #dc3545; font-size: 1.8em;">👑 VIP PROGRAM</h3>
+      <div class="price">20<span class="price-currency">€</span></div>
+      <p style="color: #666; margin-bottom: 20px;">mjesečno</p>
+      
+      <ul class="features">
+        <li>✅ Dnevni 1-na-1 online treninzi</li>
+        <li>✅ Personalizirani plan obroka</li>
+        <li>✅ Pristup privatnoj VIP grupi</li>
+        <li>✅ Mjesečni fizički pregledi</li>
+        <li>✅ Prioritetna podrška</li>
+      </ul>
+      
+      <p style="font-style: italic; margin-top: 20px; color: #666;">
+        Za maksimalne rezultate - manje od 70 centi dnevno!
+      </p>
+      
+      <button class="cta-button" style="width: 100%; margin-top: 20px;">POČNI ODMAH</button>
+    </div>
+  </div>
+</div>
+
+<div class="testimonials">
+  <h2 class="section-title">⭐ TESTIMONIJALI ZADOVOLJNIH KLIJENATA</h2>
+  
+  <div class="testimonials-grid">
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p style="font-size: 1.1em; font-style: italic; margin-bottom: 15px;">
+        "Nevjerovatna transformacija za samo 3 mjeseca! Nakon rođenja djece sam se potpuno zanemarila. Preko ovog programa sam izgubila 12kg, vratila energiju i konačno se osjećam sretno u svojoj koži."
+      </p>
+      <p><strong>Marija, 45 godina - Zagreb</strong></p>
+    </div>
+
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p style="font-size: 1.1em; font-style: italic; margin-bottom: 15px;">
+        "Osjećam se kao da imam 35 godina! Skeptičan sam bio na početku, ali rezultati govore sve. Energija mi se povećala za 200%, spavam bolje, a žena kaže da izgledam 10 godina mlađe."
+      </p>
+      <p><strong>Petar, 52 godine - Split</strong></p>
+    </div>
+
+    <div class="testimonial">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p style="font-size: 1.1em; font-style: italic; margin-bottom: 15px;">
+        "Najbolja investicija u sebe! Posao me ubijao, konstantno sam bila umorna. Sada imam energiju za sve - posao, djecu, hobby. Preporučujem svima!"
+      </p>
+      <p><strong>Ana, 38 godina - Rijeka</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="guarantee">
+  <h2 style="font-size: 2.5em; margin-bottom: 20px;">🛡️ 30 DANA GARANCIJE POVRATA NOVCA!</h2>
+  <p style="font-size: 1.3em; margin-bottom: 30px;">
+    Ako u prvih 30 dana niste zadovoljni rezultatima, vratit ćemo vam potpunu cijenu programa - bez ikakvih pitanja ili uvjeta!
+  </p>
+  <a href="#" class="cta-button" style="background: white; color: #28a745;">POČNI BEZ RIZIKA</a>
+</div>
+
+<script>
+// Smooth scroll za linkove
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Animacija za pricing kartice
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.pricing-card, .testimonial').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+});
+</script>
