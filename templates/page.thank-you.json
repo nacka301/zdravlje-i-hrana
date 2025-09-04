@@ -1,0 +1,139 @@
+{
+  "name": "Hvala stranica",
+  "sections": {
+    "thank_you_hero": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/thank-you-hero.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-2",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "heading": "🎉 ČESTITAMO!",
+        "subheading": "Vaša narudžba je uspješno primljena. Uskoro ćete dobiti potvrdu na email.",
+        "button_label": "",
+        "button_link": "",
+        "button_style_secondary": false
+      }
+    },
+    "order_success": {
+      "type": "multicolumn",
+      "blocks": {
+        "success_1": {
+          "type": "column",
+          "settings": {
+            "title": "📧 POTVRDA POSLANA",
+            "text": "<p>Potvrda narudžbe je poslana na vašu email adresu. Molimo provjerite spam folder ako ne vidite poruku.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "success_2": {
+          "type": "column",
+          "settings": {
+            "title": "🚚 BRZA DOSTAVA",
+            "text": "<p>Vaš paket će biti poslan u roku od 24 sata. Dostavit ćemo ga na adresu koju ste naveli.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "success_3": {
+          "type": "column",
+          "settings": {
+            "title": "🎁 BONUS MATERIJALI",
+            "text": "<p>GRATIS eBook 'Energija nakon 40' će biti poslan na vašu email adresu u sljedećih 15 minuta.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["success_1", "success_2", "success_3"],
+      "settings": {
+        "title": "ŠTO SADA?",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "bonus_offers": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 3,
+        "title": "🔥 EKSKLUZIVNO ZA VAS - DODATNI POPUST!",
+        "heading_size": "h2",
+        "description": "<p><strong>Kao naš kupac, imate pravo na dodatnih 20% popusta na sljedeću narudžbu!</strong> Kod: HVALA20</p>",
+        "show_description": true,
+        "description_style": "subtitle",
+        "columns_desktop": 3,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "accent-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "social_share": {
+      "type": "multicolumn",
+      "blocks": {
+        "share_facebook": {
+          "type": "column",
+          "settings": {
+            "title": "📱 PODIJELITE",
+            "text": "<p>Podijelite svoju transformaciju s prijateljima na društvenim mrežama i pomozite i njima!</p>",
+            "link_label": "PODIJELI NA FACEBOOKU",
+            "link": "https://www.facebook.com/sharer.php"
+          }
+        },
+        "refer_friend": {
+          "type": "column",
+          "settings": {
+            "title": "👫 PREPORUČITE PRIJATELJA",
+            "text": "<p>Za svakog prijatelja kojeg preporučite dobijete 50kn popusta na sljedeću narudžbu!</p>",
+            "link_label": "PREPORUČITE SADA",
+            "link": "/pages/refer-friend"
+          }
+        }
+      },
+      "block_order": ["share_facebook", "refer_friend"],
+      "settings": {
+        "title": "POMOZITE DRUGIMA",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": ["thank_you_hero", "order_success", "bonus_offers", "social_share"]
+}

@@ -1,0 +1,240 @@
+{%- comment -%}
+  Conversion Optimization Elements Snippet
+  Usage: {% render 'conversion-elements', type: 'urgency' %}
+{%- endcomment -%}
+
+{%- case type -%}
+  {%- when 'urgency-banner' -%}
+    <div class="urgency-banner">
+      🔥 OGRANIČENO MJESTA: 50% POPUST na personal training + digitalne programe - SAMO {{ urgency_hours | default: 48 }} SATI! 
+      <span class="countdown-timer" id="urgency-countdown"></span>
+    </div>
+
+  {%- when 'stock-indicator' -%}
+    <div class="stock-indicator">
+      <span id="stock-level">⚠️ SAMO 3 MJESTA OSTALO ZA OVAJ MJESEC!</span>
+    </div>
+
+  {%- when 'social-proof' -%}
+    <div class="social-proof">
+      <div class="social-proof-icon">👥</div>
+      <div class="social-proof-text">
+        <strong><span class="visitors-count">{{ visitors_count | default: 127 }}</span> osoba</strong> gleda ovaj program upravo sada
+      </div>
+    </div>
+
+  {%- when 'trust-badges' -%}
+    <div class="trust-badges">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <h3>✅ 30 DANA GARANCIJE</h3>
+          <p>Povrat novca bez pitanja</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h3>🏆 5000+ KLIJENATA</h3>
+          <p>Uspješno transformiranih</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h3>⚡ INSTANT PRISTUP</h3>
+          <p>Odmah nakon plaćanja</p>
+        </div>
+      </div>
+    </div>
+
+  {%- when 'testimonial-popup' -%}
+    <div class="testimonial-card">
+      <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+      <p>"{{ testimonial_text | default: 'Nevjerojatni rezultati već nakon 2 tjedna! Energija mi je porasla nevjerojatno.' }}"</p>
+      <div class="testimonial-author">{{ testimonial_author | default: 'Marija K., 45 godina' }}</div>
+    </div>
+
+  {%- when 'progress-bar' -%}
+    <div class="offer-progress">
+      <div class="offer-progress-bar" style="width: {{ progress_percent | default: 75 }}%;"></div>
+      <div class="offer-progress-text">{{ progress_text | default: 'Popust se iskorištava - 75% ponuda ostalo!' }}</div>
+    </div>
+
+  {%- when 'floating-cta' -%}
+    <button class="fab-cta" onclick="window.location.href='{{ cta_link | default: '/collections/all' }}'">
+      {{ cta_text | default: 'KUPI SADA 🛒' }}
+    </button>
+
+  {%- when 'exit-intent-trigger' -%}
+    <div id="exit-intent-trigger" style="display: none;">
+      <h2>PRIČEKAJTE! 🛑</h2>
+      <p>Ekskluzivna ponuda samo za vas:</p>
+      <div class="exit-offer">
+        <h3>30% POPUST + BESPLATNA DOSTAVA</h3>
+        <p>Vrijedi samo sljedećih 10 minuta!</p>
+      </div>
+    </div>
+
+  {%- when 'review-count' -%}
+    <div class="review-count">
+      <span class="review-stars">⭐⭐⭐⭐⭐</span>
+      <span class="review-number">({{ review_count | default: 127 }} recenzija)</span>
+      <span class="review-rating">{{ review_rating | default: '4.8' }}/5</span>
+    </div>
+
+  {%- when 'sale-badge' -%}
+    <div class="sale-badge">
+      🔥 {{ badge_text | default: 'SNIŽENO 25%' }}
+    </div>
+
+  {%- when 'guarantee-seal' -%}
+    <div class="guarantee-seal">
+      <div class="seal-icon">🛡️</div>
+      <div class="seal-text">
+        <strong>100% GARANCIJA</strong><br>
+        {{ guarantee_text | default: '30 dana povrat novca' }}
+      </div>
+    </div>
+
+  {%- when 'payment-icons' -%}
+    <div class="payment-icons">
+      <span>Sigurno plaćanje:</span>
+      <img src="{{ 'icon-visa.svg' | asset_url }}" alt="Visa" style="height: 30px; margin: 0 5px;">
+      <img src="{{ 'icon-mastercard.svg' | asset_url }}" alt="MasterCard" style="height: 30px; margin: 0 5px;">
+      <img src="{{ 'icon-paypal.svg' | asset_url }}" alt="PayPal" style="height: 30px; margin: 0 5px;">
+    </div>
+
+  {%- when 'shipping-info' -%}
+    <div class="service-info">
+      <div class="service-item">
+        <span class="service-icon">�</span>
+        <span>Online sesije 24/7</span>
+      </div>
+      <div class="service-item">
+        <span class="service-icon">�</span>
+        <span>Mobilna aplikacija</span>
+      </div>
+      <div class="service-item">
+        <span class="service-icon">🎯</span>
+        <span>Personalizirani plan</span>
+      </div>
+    </div>
+
+  {%- when 'recent-sales' -%}
+    <div class="recent-sales">
+      <div class="sales-ticker">
+        <span class="sales-item">Marija iz Zagreba se upisala u Personal Training program</span>
+        <span class="sales-item">Petar iz Splita je započeo Digital Wellness program</span>
+        <span class="sales-item">Ana iz Rijeke se upisala u Kompletni paket</span>
+        <span class="sales-item">Tomislav iz Osijeka je rezervirao sesije s trenerom</span>
+      </div>
+    </div>
+
+{%- endcase -%}
+
+{%- comment -%} Additional CSS for elements {%- endcomment -%}
+<style>
+.guarantee-seal {
+  display: flex;
+  align-items: center;
+  background: #e8f5e8;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  border-left: 4px solid #28a745;
+}
+
+.seal-icon {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.payment-icons {
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+}
+
+.service-info {
+  display: flex;
+  justify-content: space-around;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.recent-sales {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.sales-ticker {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+.sales-item {
+  white-space: nowrap;
+  margin-right: 50px;
+  font-size: 14px;
+  color: #28a745;
+  font-weight: 500;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.review-count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.review-stars {
+  color: #ffc107;
+}
+
+.review-number {
+  color: #6c757d;
+}
+
+.review-rating {
+  color: #28a745;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .service-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .service-item {
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .service-icon {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
+</style>

@@ -1,0 +1,47 @@
+{
+  "name": "zdravlje-i-hrana-shopify-tema",
+  "version": "1.0.0",
+  "description": "Conversion-optimized Shopify tema za personal training i wellness digitalne usluge",
+  "main": "layout/theme.liquid",
+  "scripts": {
+    "theme:serve": "shopify theme serve",
+    "theme:push": "shopify theme push",
+    "theme:pull": "shopify theme pull",
+    "theme:check": "shopify theme check",
+    "build": "echo 'Building Shopify theme...'",
+    "deploy": "shopify theme push --live"
+  },
+  "keywords": [
+    "shopify",
+    "theme",
+    "conversion-optimization",
+    "personal-training",
+    "wellness",
+    "digital-services",
+    "health",
+    "fitness"
+  ],
+  "author": "GitHub Copilot",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/[username]/zdravlje-i-hrana.git"
+  },
+  "bugs": {
+    "url": "https://github.com/[username]/zdravlje-i-hrana/issues"
+  },
+  "homepage": "https://github.com/[username]/zdravlje-i-hrana#readme",
+  "devDependencies": {
+    "@shopify/cli": "^3.0.0",
+    "@shopify/theme": "^3.0.0"
+  },
+  "shopify": {
+    "theme": {
+      "id": "live",
+      "name": "Zdravlje i Hrana - Live"
+    }
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
