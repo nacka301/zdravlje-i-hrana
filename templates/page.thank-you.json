@@ -112,7 +112,7 @@
           "type": "column",
           "settings": {
             "title": "👫 PREPORUČITE PRIJATELJA",
-            "text": "<p>Za svakog prijatelja kojeg preporučite dobijete 50kn popusta na sljedeću narudžbu!</p>",
+            "text": "<p>Za svakog prijatelja kojeg preporučite dobijete 7€ popusta na sljedeću narudžbu!</p>",
             "link_label": "PREPORUČITE SADA",
             "link": "/pages/refer-friend"
           }

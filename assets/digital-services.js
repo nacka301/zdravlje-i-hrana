@@ -282,7 +282,7 @@ function initConsultationForm() {
         // Track conversion
         if (typeof gtag !== 'undefined') {
           gtag('event', 'generate_lead', {
-            currency: 'HRK',
+            currency: 'EUR',
             value: 500, // Value of consultation
             event_category: 'Free Consultation',
             event_label: 'Form Submission'
