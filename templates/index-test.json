@@ -141,7 +141,7 @@
           "settings": {
             "image": "shopify://shop_images/basic-program.jpg",
             "title": "OSNOVNI PROGRAM",
-            "text": "<p><strong>Cijena: 29€/mjesec</strong></p><p>• Personalizirani plan vježbanja<br/>• Osnovni nutritivni savjeti<br/>• Pristup mobilnoj aplikaciji<br/>• Email podrška</p><p><em>Idealno za početnike</em></p>",
+            "text": "<p><strong>Cijena: 5€/mjesec</strong></p><p>• Personalizirani plan vježbanja<br/>• Osnovni nutritivni savjeti<br/>• Pristup mobilnoj aplikaciji<br/>• Email podrška</p><p><em>Idealno za početnike - najjeftiniji start!</em></p>",
             "link_label": "ODABERI OSNOVNI",
             "link": "#contact"
           }
@@ -151,7 +151,7 @@
           "settings": {
             "image": "shopify://shop_images/premium-program.jpg",
             "title": "PREMIUM PROGRAM",
-            "text": "<p><strong>Cijena: 49€/mjesec (NAJPOPULARNIJI!)</strong></p><p>• 1-na-1 online personal training<br/>• Detaljni plan prehrane<br/>• Tjedni video pozivi s trenerom<br/>• 24/7 chat podrška<br/>• Pristup ekskluzivnim video treninzima</p><p><em>Najbolji omjer cijene i kvalitete</em></p>",
+            "text": "<p><strong>Cijena: 15€/mjesec (NAJPOPULARNIJI!)</strong></p><p>• 1-na-1 online personal training<br/>• Detaljni plan prehrane<br/>• Tjedni video pozivi s trenerom<br/>• 24/7 chat podrška<br/>• Pristup ekskluzivnim video treninzima</p><p><em>Najbolji omjer cijene i kvalitete - samo 50 centi dnevno!</em></p>",
             "link_label": "ODABERI PREMIUM",
             "link": "#contact"
           }
@@ -161,7 +161,7 @@
           "settings": {
             "image": "shopify://shop_images/vip-program.jpg",
             "title": "VIP PROGRAM",
-            "text": "<p><strong>Cijena: 89€/mjesec</strong></p><p>• Dnevni 1-na-1 online treninzi<br/>• Personalizirani plan obroka<br/>• Pristup privatnoj VIP grupi<br/>• Mjesečni fizički pregledi<br/>• Prioritetna podrška</p><p><em>Za one koji žele maksimalne rezultate</em></p>",
+            "text": "<p><strong>Cijena: 20€/mjesec</strong></p><p>• Dnevni 1-na-1 online treninzi<br/>• Personalizirani plan obroka<br/>• Pristup privatnoj VIP grupi<br/>• Mjesečni fizički pregledi<br/>• Prioritetna podrška</p><p><em>Za maksimalne rezultate - manje od 70 centi dnevno!</em></p>",
             "link_label": "ODABERI VIP",
             "link": "#contact"
           }

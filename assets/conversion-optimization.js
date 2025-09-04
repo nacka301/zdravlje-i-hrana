@@ -159,7 +159,7 @@ function showExitIntentPopup() {
         <div class="exit-offer">
           <div class="exit-offer-badge">EKSKLUZIVNO ZA VAS!</div>
           <h4>50% POPUST + GRATIS PERSONAL SESIJE</h4>
-          <p>+ GRATIS pristup svim digitalnim programima (vrijedi 133€)</p>
+          <p>+ GRATIS pristup svim digitalnim programima (vrijedi 10€)</p>
           <div class="exit-countdown">
             <p>Ponuda ističe za: <span id="exit-timer">10:00</span></p>
           </div>
