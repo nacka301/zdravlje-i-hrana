@@ -1,9 +1,9 @@
 {
   "sections": {
-    "announcement-bar": {
+    "announcement_bar_main": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement": {
+        "announcement_1": {
           "type": "announcement",
           "settings": {
             "text": "🔥 OSOBNI TRENING + DIGITALNI PROGRAM - 50% POPUST - Samo danas!",
@@ -12,17 +12,17 @@
           }
         }
       },
-      "block_order": ["announcement"],
+      "block_order": ["announcement_1"],
       "settings": {
         "color_scheme": "accent-1",
         "show_line_separator": true,
         "show_social": false
       }
     },
-    "slideshow": {
+    "slideshow_main": {
       "type": "slideshow",
       "blocks": {
-        "slide": {
+        "slide_1": {
           "type": "slide",
           "settings": {
             "heading": "TRANSFORMIRAJTE SVOJE ZDRAVLJE",
@@ -39,7 +39,7 @@
           }
         }
       },
-      "block_order": ["slide"],
+      "block_order": ["slide_1"],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
@@ -113,7 +113,7 @@
           "type": "column",
           "settings": {
             "title": "📚 KOMPLETNI DIGITALNI PAKET",
-            "text": "<p><strong>Uz svaki program GRATIS dobivate:</strong></p><p>🎁 Personal training sesije (vrijedi 50€)<br/>🎁 eBook 'Energija nakon 40' (vrijedi 10€)<br/>🎁 Plan prehrane za 30 dana<br/>🎁 Video vježbe za pokretljivost<br/>🎁 Mobilna aplikacija za praćenje</p>",
+            "text": "<p><strong>Uz svaki program GRATIS dobivate:</strong></p><p>🎁 Personal training sesije (vrijedi 10€)<br/>🎁 eBook 'Energija nakon 40' (vrijedi 5€)<br/>🎁 Plan prehrane za 30 dana<br/>🎁 Video vježbe za pokretljivost<br/>🎁 Mobilna aplikacija za praćenje</p>",
             "link_label": "PREUZMI PROGRAM ODMAH ➤",
             "link": ""
           }
@@ -204,8 +204,8 @@
     }
   },
   "order": [
-    "announcement-bar",
-    "slideshow", 
+    "announcement_bar_main",
+    "slideshow_main", 
     "trust_badges",
     "services",
     "testimonials",
