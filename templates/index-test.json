@@ -1,32 +1,287 @@
 {
   "sections": {
-    "main": {
-      "type": "rich-text",
+    "hero_banner": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/personal-trainer-hero.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-2",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "heading": "TRANSFORMIRAJTE SVOJE ZDRAVLJE S PERSONAL TRENEROM",
+        "heading_size": "h1",
+        "subheading": "Osobni online treninzi + digitalni wellness programi koji ce vam vratiti energiju, snagu i vitalnost. Preko 5,000 zadovoljnih klijenata!",
+        "button_label": "REZERVIRAJ BESPLATNU KONSULTACIJU",
+        "button_link": "#contact",
+        "button_style_secondary": false
+      }
+    },
+    "announcement_bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "text": "POSEBNA PONUDA: 50% POPUST na sve programe + GRATIS personal training sesije - Samo ovaj tjedan!",
+            "link": "#programs",
+            "color_scheme": "accent-1"
+          }
+        }
+      },
+      "block_order": ["announcement"],
+      "settings": {
+        "color_scheme": "accent-1",
+        "show_line_separator": true,
+        "show_social": false
+      }
+    },
+    "about_section": {
+      "type": "image-with-text",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "DOBRODOŠLI U ZDRAVLJE I HRANU",
-            "heading_size": "h1"
+            "heading": "ZASTO BIRATI NAŠE PERSONAL TRAINING PROGRAME?",
+            "heading_size": "h2"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Ova stranica je test da vidimo radi li osnovni sadržaj.</p>"
+            "text": "<p><strong>Osjećate se umorno? Nedostaje vam energije? Želite se osjećati kao s 30 godina?</strong></p><p>Naši certificirani personal treneri specijalizirani su za rad s osobama od 40+ godina. Kombiniramo personalizirani pristup s najnovijim znanstvenim spoznajama o zdravlju i wellness-u.</p><p><strong>Naš pristup uključuje:</strong></p><ul><li>Individualni plan treninga prilagođen vašoj dobi i kondiciji</li><li>Nutritivne smjernice za optimizaciju energije</li><li>24/7 podrška kroz mobilnu aplikaciju</li><li>Redovito praćenje napretka i prilagodbe programa</li><li>Pristup ekskluzivnoj zajednici korisnika</li></ul>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "SAZNAJ VISE O PROGRAMIMA",
+            "button_link": "#programs",
+            "button_style_secondary": false
           }
         }
       },
-      "block_order": ["heading", "text"],
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "image": "shopify://shop_images/trainer-consultation.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "background-1",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "trust_badges": {
+      "type": "multicolumn",
+      "blocks": {
+        "guarantee": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/guarantee-icon.png",
+            "title": "30 DANA GARANCIJE POVRATA NOVCA",
+            "text": "<p>Ako u prvih 30 dana niste zadovoljni rezultatima, vratit ćemo vam potpunu cijenu programa - bez ikakvih pitanja ili uvjeta!</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "clients": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/clients-icon.png",
+            "title": "PREKO 5000 ZADOVOLJNIH KLIJENATA",
+            "text": "<p>Pridružite se tisućama ljudi koji su već transformirali svoje zdravlje i vratili energiju koju su imali u mladosti.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "support": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/support-icon.png",
+            "title": "24/7 STRUČNA PODRŠKA",
+            "text": "<p>Naš tim certificiranih trenera i nutricionista dostupan je 24/7 kroz mobilnu aplikaciju za sva vaša pitanja.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["guarantee", "clients", "support"],
+      "settings": {
+        "title": "ZAŠTO NAS BIRAJU TISUĆE ZADOVOLJNIH KLIJENATA",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "programs_section": {
+      "type": "multicolumn",
+      "blocks": {
+        "basic_program": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/basic-program.jpg",
+            "title": "OSNOVNI PROGRAM",
+            "text": "<p><strong>Cijena: 29€/mjesec</strong></p><p>• Personalizirani plan vježbanja<br/>• Osnovni nutritivni savjeti<br/>• Pristup mobilnoj aplikaciji<br/>• Email podrška</p><p><em>Idealno za početnike</em></p>",
+            "link_label": "ODABERI OSNOVNI",
+            "link": "#contact"
+          }
+        },
+        "premium_program": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/premium-program.jpg",
+            "title": "PREMIUM PROGRAM",
+            "text": "<p><strong>Cijena: 49€/mjesec (NAJPOPULARNIJI!)</strong></p><p>• 1-na-1 online personal training<br/>• Detaljni plan prehrane<br/>• Tjedni video pozivi s trenerom<br/>• 24/7 chat podrška<br/>• Pristup ekskluzivnim video treninzima</p><p><em>Najbolji omjer cijene i kvalitete</em></p>",
+            "link_label": "ODABERI PREMIUM",
+            "link": "#contact"
+          }
+        },
+        "vip_program": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/vip-program.jpg",
+            "title": "VIP PROGRAM",
+            "text": "<p><strong>Cijena: 89€/mjesec</strong></p><p>• Dnevni 1-na-1 online treninzi<br/>• Personalizirani plan obroka<br/>• Pristup privatnoj VIP grupi<br/>• Mjesečni fizički pregledi<br/>• Prioritetna podrška</p><p><em>Za one koji žele maksimalne rezultate</em></p>",
+            "link_label": "ODABERI VIP",
+            "link": "#contact"
+          }
+        }
+      },
+      "block_order": ["basic_program", "premium_program", "vip_program"],
+      "settings": {
+        "title": "ODABERITE PROGRAM KOJI ODGOVARA VAŠIM POTREBAMA",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 52,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials": {
+      "type": "multicolumn",
+      "blocks": {
+        "testimonial_1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/testimonial-marija.jpg",
+            "title": "Marija, 45 godina - Zagreb",
+            "text": "<p>⭐⭐⭐⭐⭐</p><p><strong>\"Nevjerojatna transformacija za samo 3 mjeseca!\"</strong></p><p>\"Nakon rođenja djece sam se potpuno zanemarila. Preko ovog programa sam izgubila 12kg, vratila energiju i konačno se osjećam sretno u svojoj koži. Trener je bio iznimno strpljiv i motivirajući.\"</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/testimonial-petar.jpg",
+            "title": "Petar, 52 godine - Split",
+            "text": "<p>⭐⭐⭐⭐⭐</p><p><strong>\"Osjećam se kao da imam 35 godina!\"</strong></p><p>\"Skeptičan sam bio na početku, ali rezultati govore sve. Energija mi se povećala za 200%, spavam bolje, a žena kaže da izgledam 10 godina mlađe. Najbolja investicija ikada!\"</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/testimonial-ana.jpg",
+            "title": "Ana, 48 godina - Rijeka",
+            "text": "<p>⭐⭐⭐⭐⭐</p><p><strong>\"Konačno mogu pratiti svoju djecu!\"</strong></p><p>\"Prije programa jedva sam se uspinjala stepenicama. Sada igram tenis s djecom, planinarim vikendom i imam energiju za sve što volim. Hvala vam što ste mi vratili život!\"</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["testimonial_1", "testimonial_2", "testimonial_3"],
+      "settings": {
+        "title": "ŠTO KAŽU NAŠI ZADOVOLJNI KLIJENTI",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "circle",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "accent-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "contact_form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "REZERVIRAJTE SVOJU BESPLATNU KONSULTACIJU",
+        "heading_size": "h2",
+        "color_scheme": "background-1",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "final_cta": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "SPREMNI STE ZA PROMJENU?",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Ne čekajte sutra. Vaše zdravlje i energija ne mogu čekati.</strong></p><p>Pridružite se tisućama zadovoljnih klijenata koji su već napravili korak prema boljem zdravlju. Besplatna konsultacija traje samo 30 minuta, a može promijeniti vaš život.</p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "REZERVIRAJ BESPLATNU KONSULTACIJU SADA",
+            "button_link": "#contact",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-1",
+        "color_scheme": "accent-1",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },
-  "order": ["main"]
+  "order": ["announcement_bar", "hero_banner", "about_section", "trust_badges", "programs_section", "testimonials", "contact_form", "final_cta"]
 }
